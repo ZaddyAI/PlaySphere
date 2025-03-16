@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100, 255, 218, 0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    /* //----------------- Font ---------------------- */
+    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    /* //------------- size ------------------ */
+    --fz-xxs: 0.75rem;
+    --fz-xs: 0.8125rem;
+    --fz-sm: 0.875rem;
+    --fz-md: 1rem;
+    --fz-mdd: 1.0625rem;
+    --fz-lg: 1.125rem;
+    --fz-xl: 1.25rem;
+    --fz-xxl: 1.2rem;
+    --fz-heading: 2.2rem;
+    --fz-heading2: 4rem;
+    --fz-xxxl: 5rem;
+}
+
+@theme inline {
+    /* ------------------- Colors ----------------- */
+    --color-dark-navy: var(--dark-navy);
+    --color-navy: var(--navy);
+    --color-light-navy: var(--light-navy);
+    --color-lightest-navy: var(--lightest-navy);
+    --color-navy-shadow: var(--navy-shadow);
+    --color-dark-slate: var(--dark-slate);
+    --color-slate: var(--slate);
+    --color-light-slate: var(--light-slate);
+    --color-lightest-slate: var(--lightest-slate);
+    --color-white: var(--white);
+    --color-green: var(--green);
+    --color-green-tint: var(--green-tint);
+    --color-pink: var(--pink);
+    --color-blue: var(--blue);
+
+    /* ----------------- Fonts ---------------------- */
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+
+    /* ----------------- Font Sizes ---------------------- */
+    --text-xxs: var(--fz-xxs);
+    --text-xs: var(--fz-xs);
+    --text-sm: var(--fz-sm);
+    --text-md: var(--fz-md);
+    --text-mdd: var(--fz-mdd);
+    --text-lg: var(--fz-lg);
+    --text-xl: var(--fz-xl);
+    --text-xxl: var(--fz-xxl);
+    --text-heading: var(--fz-heading);
+    --text-heading2: var(--fz-heading2);
+    --text-xxxl: var(--fz-xxxl);
+}
+
+body {
+    background: var(--dark-navy);
+    color: var(--navy);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Example Usage */
+.neon-border {
+    @apply border-2 border-[var(--color-blue)];
+    box-shadow: 0 0 5px rgba(87, 203, 255, 1), inset 0 0 5px rgba(87, 203, 255, 1);
+}
