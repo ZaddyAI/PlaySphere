@@ -84,10 +84,10 @@ const ComingSoon = () => {
                     Something amazing is coming
                 </h2>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6">
-                    We're <span className="text-neon-blue neon-text-shadow">launching</span> soon
+                    We&apos;re <span className="text-neon-blue neon-text-shadow">launching</span> soon
                 </h1>
                 <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 tracking-wide mb-10">
-                    We're crafting a premium experience with meticulous attention to detail.
+                    We&apos;re crafting a premium experience with meticulous attention to detail.
                     Join our waitlist to be the first to know when we launch.
                 </p>
 
